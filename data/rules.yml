@@ -1,0 +1,74 @@
+version: "2.0"
+
+rules:
+- rule: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: askability
+  steps:
+  - intent: ask_ability
+  - action: utter_show_ability
+
+# - rule: active_find_lecturer
+#   steps:
+#   - intent: ask_lecturer
+#   - action: lecturer_form
+#   - active_loop: lecturer_form
+
+
+# - rule: active_form_thinghiem
+#   steps:
+#   - intent: dang_ky_thi_nghiem
+#   - action: thinghiem_form
+#   - slot_was_set:
+#     - requested_thingiem_slot: mssv
+#   - slot_was_set:
+#     - mssv
+#   - slot_was_set:
+#     - requested_thingiem_slot: phone
+#   - slot_was_set:
+#     - phone
+#   - slot_was_set:
+#     - requested_thingiem_slot: hoc_phan
+#   - slot_was_set:
+#     - hoc_phan
+#   - slot_was_set:
+#     - requested_thingiem_slot: date
+#   - slot_was_set:
+#     - date
+#   - active_loop: thinghiem_form
+  
+
+# - rule: submit_find_lecturer
+#   condition: 
+#   - active_loop: lecturer_form
+#   steps:
+#   - action: lecturer_form
+#   - active_loop: null
+#   - action: action_find_lecturer
+
+# - rule: submit_form_thinghiem
+#   condition: 
+#   - active_loop: thinghiem_form
+#   steps:
+#   - action: thinghiem_form
+  
+#   - slot_was_set:
+#     - requested_thingiem_slot: null
+#   - active_loop: null
+  
+
+
+- rule: bot_challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+  

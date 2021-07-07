@@ -1,0 +1,34 @@
+version: "2.0"
+
+stories:
+
+  - story: find lecturer 
+    steps:
+    - intent: ask_lecturer
+    - action: lecturer_form
+    - active_loop: lecturer_form
+    - slot_was_set:
+      - requested_slot: lecturer_name
+    - slot_was_set:
+      - requested_slot: null
+    - active_loop: null
+    - action: action_find_lecturer
+
+  - story: enter form thi nghiem
+    steps:
+    - intent: dang_ky_thi_nghiem
+    - action: thinghiem_form
+    - active_loop: thinghiem_form
+    - slot_was_set:
+      - requested_slot: mssv
+    - slot_was_set:
+      - requested_slot: hoc_phan
+    - slot_was_set:
+      - requested_slot: date
+    - slot_was_set:
+      - requested_slot: phone
+    - slot_was_set:
+      - requested_slot: null
+    - active_loop: null
+    - action: action_save_form
+    - action: utter_end_thinghiem

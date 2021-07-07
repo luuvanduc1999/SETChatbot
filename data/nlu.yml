@@ -1,0 +1,129 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - chào
+    - xin chào
+    - hi
+    - hello 
+    - tôi muốn hỏi chút
+    - bạn ơi
+    - chào bạn
+    - hỏi chút
+    - cho hỏi chút
+    - alo
+    - eh bot
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - bye bye
+    - tạm biệt em
+    - tạm biệt bot nhá
+    - tạm biệt
+    - bye bot
+    - hẹn gặp lại
+    - cảm ơn nhiều
+    - thanks
+    - cảm ơn
+
+- intent: ask_ability
+  examples: |
+    - bạn có thể làm những gì nhỉ
+    - bạn có chức năng gì?
+    - bạn giúp gì được mình không?
+    - bạn có thể giúp gì cho mình?
+    - bạn biết làm gì?
+    - bạn có thể hỗ trợ mình như thế nào?
+    - em biết gì
+    - biết gì
+    - bot biết gì
+    - ???
+    - có gì
+    - mày biết gì
+    - cho tao biêt
+    - cậu biết gì
+
+- intent: ask_lecturer
+  examples: |
+    - thông tin giảng viên
+    - thông tin liên hệ giảng viên
+    - thông tin giảng viên [Nguyễn Đức Minh]{"entity": "lecturer_name"}
+    - thông tin thầy [Nguyễn Đức Minh]{"entity": "lecturer_name"}
+    - thông tin cô [Nguyễn Đức Minh]{"entity": "lecturer_name"}
+    - giảng viên [Nguyễn Đức Minh]{"entity": "lecturer_name"} là ai?
+    - thầy [Nguyễn Đức Minh]{"entity": "lecturer_name"} là ai?
+    - cô [Nguyễn Đức Minh]{"entity": "lecturer_name"} là ai?
+    - thông tin liên hệ giảng viên [Nguyễn Đức Minh]{"entity": "lecturer_name"} 
+    - thông tin liên hệ thầy [Nguyễn Đức Minh]{"entity": "lecturer_name"} 
+    - thông tin liên hệ cô [Nguyễn Đức Minh]{"entity": "lecturer_name"} 
+    - email của giảng viên [Nguyễn Đức Minh]{"entity": "lecturer_name"} là gì?
+    - email của thầy [Nguyễn Đức Minh]{"entity": "lecturer_name"} là gì?
+    - email của cô [Nguyễn Đức Minh]{"entity": "lecturer_name"} là gì?
+    - tìm giảng viên [Nguyễn Đức Minh]{"entity": "lecturer_name"} ở đâu?
+    - tìm thầy [Nguyễn Đức Minh]{"entity": "lecturer_name"} ở đâu?
+    - tìm cô [Nguyễn Đức Minh]{"entity": "lecturer_name"} ở đâu?
+
+- regex: mssv
+  examples: |
+    - 20(\d){6}
+- intent: mssv
+  examples: |
+    - [20172482]{"entity": "mssv"}
+    - [20182749]{"entity": "mssv"}
+    - [20192452]{"entity": "mssv"}
+    - [20201142]{"entity": "mssv"}
+    - [20161234]{"entity": "mssv"}
+
+- regex: phone
+  examples: |
+    - [0-9]{10}[()+. -]*
+- intent: phone
+  examples: |
+    - [0123456789]{"entity": "phone"}
+    - [0987654321]{"entity": "phone"}
+    - [0986667621]{"entity": "phone"}
+
+- regex: date
+  examples: |
+    - (?<!\d)(0[1-9]|[1-2][0-9]|3[0-1])(?!\d)
+- intent: date
+  examples: |
+    - [1]{"entity": "date"}
+    - [2]{"entity": "date"}
+    - [5]{"entity": "date"}
+    - [11]{"entity": "date"}
+    - [18]{"entity": "date"}
+    - [30]{"entity": "date"}
+    - [22]{"entity": "date"}
+
+- regex: hoc_phan
+  examples: |
+    - ET(\d){4}
+- intent: hoc_phan
+  examples: |
+    - [ET0001]{"entity": "hoc_phan"}
+    - [ET0002]{"entity": "hoc_phan"}
+    - [ET0003]{"entity": "hoc_phan"}
+    - [ET0004]{"entity": "hoc_phan"}
+    - [ET0005]{"entity": "hoc_phan"}
+    - [ET0006]{"entity": "hoc_phan"}
+    - [ET0007]{"entity": "hoc_phan"}
+    
+
+- intent: bot_challenge
+  examples: |
+    - bạn là bot à?
+    - bạn là bot phải không?
+    - bạn là người à?
+    - bạn là người phải không?
+    - tôi đang nói chuyện với bot?
+    - tôi đang nói chuyện với người?
+
+- intent: dang_ky_thi_nghiem
+  examples: |
+    - tôi muốn đăng ký thí nghiệm bù
+    - mình muốn đăng ký làm bù thí nghiệm
+
+

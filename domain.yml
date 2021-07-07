@@ -1,0 +1,127 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- ask_ability:
+    use_entities: true
+- ask_lecturer:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- dang_ky_thi_nghiem:
+    use_entities: true
+- mssv:
+    use_entities: true
+- phone:
+    use_entities: true
+- date:
+    use_entities: true
+- hoc_phan:
+    use_entities: true
+entities:
+- lecturer_name
+- mssv
+- hoc_phan
+- date
+- phone
+slots:
+  lecturer_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  mssv:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  hoc_phan:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  date:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  phone:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: |-
+      Chào bạn. 
+      Mình là chatbot được thiết kế để hỗ trợ sinh viên viện ĐTVT.
+  utter_goodbye:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: Hẹn gặp lại bạn lần sau!!
+  utter_show_ability:
+  - text: Mình có thể  giúp tra những thông tin về giảng viên, đăng ký làm bù thí nghiệm.
+  utter_ask_lecturer_name:
+  - text: Bạn muốn tìm thông tin về  giang vien nào ạ
+  utter_lecturer:
+  - text: 'Dưới đây là thông tin về môn mà bạn muốn tìm:'
+  utter_iamabot:
+  - text: I am a bot, powered by DevZone.
+  utter_internal_error:
+  - text: Xin lỗi!. Hệ thống đang gặp sự cố ngoài ý muốn :(. Xin vui lòng thực hiện lại sau.
+  utter_ask_mssv:
+  - text: Mã số sinh viên của bạn là
+  utter_ask_phone:
+  - text: Số điện thoại của bạn để khi cần liên lạc
+  utter_ask_hoc_phan:
+  - text: 'Học phần bạn muốn đăng ký thí nghiệm (VD: ET0001)'
+  utter_ask_date:
+  - text: 'Ngày bạn muốn đăng ký thí nghiệm (VD: 16)'
+  utter_end_thinghiem:
+  - text: Đăng ký hoàn thành.
+actions:
+- utter_greet
+- utter_goodbye
+- utter_show_ability
+- utter_lecturer
+- utter_ask_lecturer_name
+- utter_iamabot
+- action_find_lecturer
+- action_save_form
+- utter_ask_mssv
+- utter_ask_phone
+- utter_ask_date
+- utter_ask_hoc_phan
+- utter_end_thinghiem
+forms:
+  lecturer_form:
+    required_slots:
+      lecturer_name:
+      - entity: lecturer_name
+        type: from_entity
+  thinghiem_form:
+    required_slots:
+      date:
+      - entity: date
+        type: from_entity
+      hoc_phan:
+      - entity: hoc_phan
+        type: from_entity
+      mssv:
+      - entity: mssv
+        type: from_entity
+      phone:
+      - entity: phone
+        type: from_entity
+e2e_actions: []

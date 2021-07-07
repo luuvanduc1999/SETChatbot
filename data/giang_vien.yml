@@ -1,0 +1,152 @@
+version: "2.0"
+nlu:
+- lookup: lecturer_name
+  examples: |
+    - Nguyễn Xuân Dũng
+    - Trương Thu Hương
+    - Phạm Văn Tiến
+    - Nguyễn Hữu Thanh
+    - Nguyễn Đức Minh
+    - Nguyễn Xuân Quyền
+    - Phạm Doãn Tĩnh
+    - Hàn Huy Dũng
+    - Nguyễn Thái Hà
+    - Nguyễn Thanh Bình
+    - Trần Quang Vinh
+    - Nguyễn Thu Nga
+    - Nguyễn Hoàng Dũng
+    - Trần Thị Ngọc Lan
+    - Nguyễn Tiến Dũng
+    - Nguyễn Văn Đức
+    - Nguyễn Huy Hoàng
+    - Tạ Thị Kim Huệ
+    - Nguyễn Quốc Khương
+    - Phạm Nguyễn Thanh Loan
+    - Nguyễn Quang Minh
+    - Trần Ngọc Tuấn
+    - Nguyễn Tài Hưng
+    - Hoàng Mạnh Thắng
+    - Nguyễn Thị Kim Thoa
+    - Vũ Song Tùng
+    - Ngô Vũ Đức
+    - Nguyễn Hồng Anh
+    - Hoàng Phương Chi
+    - Phạm Thành Công
+    - Phùng Thị Kiều Hà
+    - Nguyễn Hoàng Hải
+    - Vương Hoàng Nam
+    - Nguyễn Anh Quang
+    - Hà Duyên Trung
+    - Nguyễn Hữu Trung
+    - Nguyễn Vũ Thắng
+    - Nguyễn Khắc Kiểm
+    - Vũ Văn Yêm
+    - Nguyễn Thành Chuyên
+    - Nguyễn Nam Phong
+    - Phan Xuân Vũ
+    - Phương Xuân Quang
+    - Nguyễn Thúy Anh
+    - Hán Trọng Thanh
+    - Đặng Quang Hiếu
+    - Nguyễn Tiến Hòa
+    - Trần Mạnh Hoàng
+    - Dương Tấn Nghĩa
+    - Nguyễn Hữu Phát
+    - Đào Lê Thu Thảo
+    - Nguyễn Ngọc Văn
+    - Trần Thị Thanh Hải
+    - Lê Thị Lan
+    - Nguyễn Bích Huyền
+    - Trần Anh Vũ
+    - Phạm Phúc Ngọc
+    - Vũ Duy Hải
+    - Nguyễn Phan Kiên
+    - Nguyễn Thu Vân
+    - Trịnh Quang Đức
+    - Phạm Mạnh Hùng
+    - Đinh Thị Nhung
+    - Nguyễn Minh Đức
+    - Đào Việt Hùng
+    - Dương Trọng Lượng
+    - Nguyễn Việt Dũng
+    - Hoàng Quang Huy
+    - Đỗ Trọng Tuấn
+    - Vũ Hải
+    - Nguyễn Trung Dũng
+    - Nguyễn Minh Đức
+    - Nguyễn Văn Khang
+    - Phạm Văn Bình
+    - nguyễn xuân dũng
+    - trương thu hương
+    - phạm văn tiến
+    - nguyễn hữu thanh
+    - nguyễn đức minh
+    - nguyễn xuân quyền
+    - phạm doãn tĩnh
+    - hàn huy dũng
+    - nguyễn thái hà
+    - nguyễn thanh bình
+    - trần quang vinh
+    - nguyễn thu nga
+    - nguyễn hoàng dũng
+    - trần thị ngọc lan
+    - nguyễn tiến dũng
+    - nguyễn văn đức
+    - nguyễn huy hoàng
+    - tạ thị kim huệ
+    - nguyễn quốc khương
+    - phạm nguyễn thanh loan
+    - nguyễn quang minh
+    - trần ngọc tuấn
+    - nguyễn tài hưng
+    - hoàng mạnh thắng
+    - nguyễn thị kim thoa
+    - vũ song tùng
+    - ngô vũ đức
+    - nguyễn hồng anh
+    - hoàng phương chi
+    - phạm thành công
+    - phùng thị kiều hà
+    - nguyễn hoàng hải
+    - vương hoàng nam
+    - nguyễn anh quang
+    - hà duyên trung
+    - nguyễn hữu trung
+    - nguyễn vũ thắng
+    - nguyễn khắc kiểm
+    - vũ văn yêm
+    - nguyễn thành chuyên
+    - nguyễn nam phong
+    - phan xuân vũ
+    - phương xuân quang
+    - nguyễn thúy anh
+    - hán trọng thanh
+    - đặng quang hiếu
+    - nguyễn tiến hòa
+    - trần mạnh hoàng
+    - dương tấn nghĩa
+    - nguyễn hữu phát
+    - đào lê thu thảo
+    - nguyễn ngọc văn
+    - trần thị thanh hải
+    - lê thị lan
+    - nguyễn bích huyền
+    - trần anh vũ
+    - phạm phúc ngọc
+    - vũ duy hải
+    - nguyễn phan kiên
+    - nguyễn thu vân
+    - trịnh quang đức
+    - phạm mạnh hùng
+    - đinh thị nhung
+    - nguyễn minh đức
+    - đào việt hùng
+    - dương trọng lượng
+    - nguyễn việt dũng
+    - hoàng quang huy
+    - đỗ trọng tuấn
+    - vũ hải
+    - nguyễn trung dũng
+    - nguyễn minh đức
+    - nguyễn văn khang
+    - phạm văn bình
