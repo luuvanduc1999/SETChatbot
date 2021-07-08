@@ -1,5 +1,5 @@
-## Install Rasa
-- > pip3 install rasa
+## Install Rasa + Các module khác
+- > pip3 install -r requirements.txt i
 
 ## Train model
 - > rasa train
