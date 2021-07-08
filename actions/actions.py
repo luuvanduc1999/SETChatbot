@@ -78,6 +78,7 @@ class ActionSaveForm(Action):
             if coll_name:
                 print(document_data)
                 collection_register.insert_one(document_data)
+                dispatcher.utter_message(text=f"Đăng ký thành công!" )
         
         except Exception:
             pass

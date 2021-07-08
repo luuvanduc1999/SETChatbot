@@ -3,7 +3,7 @@
 language: vi
 
 pipeline:
-  - name: VietnameseTokenizer
+  - name: actions.VietnameseTokenizer.VietnameseTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer

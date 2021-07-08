@@ -112,14 +112,14 @@ forms:
         type: from_entity
   thinghiem_form:
     required_slots:
-      date:
-      - entity: date
+      mssv:
+      - entity: mssv
         type: from_entity
       hoc_phan:
       - entity: hoc_phan
         type: from_entity
-      mssv:
-      - entity: mssv
+      date:
+      - entity: date
         type: from_entity
       phone:
       - entity: phone
