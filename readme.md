@@ -10,6 +10,7 @@ hoặc chỉ train nlu:
 **Nếu có custom action cần chạy song song**
 - > rasa run actions
 - > rasa shell
+- 
 **Run API**
 - > rasa run actions
 - > rasa run --enable-api
