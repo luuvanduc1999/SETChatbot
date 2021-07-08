@@ -3,6 +3,7 @@
 
 #### Train model
 - > rasa train
+
 hoặc chỉ train nlu:
 - > rasa train nlu
 
